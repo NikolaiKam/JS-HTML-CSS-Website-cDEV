@@ -1,0 +1,265 @@
+body{
+    background-color: rgb(39, 48, 60);
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+nav{
+    text-align: center;
+}
+
+.main-page,
+.current-project,
+.map,
+.contacts,
+.image-span{
+    font-size: 14px;
+    margin-left: 40px;
+    padding-bottom: 5px;
+    color: white;
+    vertical-align:text-bottom;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-page:hover,
+.current-project:hover,
+.contacts:hover{
+    border-bottom: 2px rgb(237, 131, 0) solid;
+}
+
+.map{
+    
+    border-bottom: 2px rgb(237, 131, 0) solid;
+}
+
+.background-nav{
+    background-color: rgb(46,61,81);
+    width: 105.5%;
+    height: 130px;
+    margin-top: -60px;
+    margin-left: -100px;
+}
+
+.c-project-start{
+    position: absolute;
+    top: 7%;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    margin-left: 150px;
+}
+
+strong{
+    color: rgb(255, 188, 41);
+    font-size: 36px;
+}
+.strong-text{
+    width: 250px;
+}
+
+.grid-line{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    height: 30px;
+}
+
+.text{
+    color: rgb(199, 140, 12);
+    font-size: 20px;
+    margin-top: -15px;
+    margin-left: -10px;
+}
+
+.vertical-line{
+    border-left: 7px rgb(255, 188, 41) solid;
+    margin-top: -15px;
+}
+
+.timeline-div{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.timeline-div::-webkit-scrollbar{
+    appearance: none;
+}
+
+.pointers{
+    position: absolute;
+    top: 9%;
+    left: 75%;
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.image-l-div,
+.image-r-div{
+    opacity: 0.5;
+}
+
+.image-l-div:hover,
+.image-r-div:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.timeline-mini{
+    margin-left: 35%;
+}
+
+.timeline-mini-img{
+    width: 500px;
+    margin-top: 0px;
+    height: 100px;
+}
+
+.content{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 90px  50px 75px 400px 100px;
+    row-gap: 10px;
+}
+
+.name-p{
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: -30px;
+    margin-left: 28px;
+}
+
+.grid-pop{
+    width: 100%;
+    height: auto;
+}
+
+.popup{
+    position: absolute;
+    right: -0%;
+    top: 0;
+    background-color: white;
+    width: 26.3%;
+    height: 100%;
+    transform: translate(-00%, 00%) scale(0);
+    box-shadow: 0 0 20px black;
+}
+
+
+.close-btn{
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: rgb(255, 188, 41);
+    height: 41%;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+}
+
+.popup.active{
+    transform: translate(-00%, -00%) scale(1);
+    transition: 0.5s;
+}
+
+.description-grid{
+    margin-top: -30px;
+    display: grid;
+    width: 80%;
+    grid-template-columns: 37px 87%;
+    column-gap: 5px;
+}
+
+.description-pop{
+    font-size: 20px;
+    color: rgb(63, 63, 63);
+}
+
+.vertical-line-pop{
+    border-right: 6px rgb(255, 188, 41) solid;
+}
+
+.form-grid-pop{
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 130px 50px;
+    row-gap: 25px;
+}
+
+.name-form,
+.email-form,
+.gsm-form,
+.text-form{
+
+    width: 85%;
+    margin-left: 37px;
+}
+
+.form-input-desc{
+    width: 85%;
+    margin-left: 37px;
+}
+
+input{
+    width: 98%;
+    height: 88%;
+    border: none;
+    outline: none;
+    border-bottom: 2px rgb(255, 188, 41) solid;
+    background-color: rgb(255, 242, 212);
+}
+
+::placeholder{
+    font-weight: bold;
+    color: black;
+    top: 0px;
+    position: absolute;
+    top: 15px;
+    left: 5%;
+}
+
+.btn-send{
+    cursor: pointer;
+    width: 100px;
+    height: 45px;
+    border: none;
+    background-color: rgb(39, 48, 60);
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 40%;
+    border-radius: 3px;
+}
+
+.btn-send:hover{
+    transition: 0.5s;
+    opacity: 0.85;
+}
+
+.error-popup{
+    width: 300px;
+    height: 80px;
+    background-color: black;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    transform: translate(-00%, 00%) scale(0);
+    transition: 0s 3s;
+}
+
+.error-popup.active {
+    transform: translate(-00%, 00%) scale(1);
+    transition-duration: 0.5s;
+    
+}
+
+
+.text-error{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 4%;
+    top: 15%;
+}

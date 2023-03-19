@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cDEV</title>
+    <link rel="stylesheet" href="current-project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div>
+        <nav>
+            <a href="main.html" style="text-decoration: none;">
+                <span class="main-page">
+                    НАЧАЛО
+                </span></a>
+            <a style="text-decoration: none;" href="#">
+                <span class="current-project">
+                    ТЕКУЩ ПРОЕКТ
+                </span></a>
+            <a style="text-decoration: none;" href="main.html">
+                <span class="image-span">
+                    <img class= "image-cdev" src="Resourses/logo_CDEV1.svg" alt="img1">
+                </span></a>
+            <a style="text-decoration: none;" href="map.html">
+                <span class="map">
+                    ПЪТНА КАРТА
+                </span></a>
+            <a style="text-decoration: none;" href="#" onclick="togglePopUp()">
+                <span class="contacts">
+                    КОНТАКТИ
+                </span></a>
+    
+        </nav>
+
+        <div class="background-nav"></div>
+
+        <div class="error-popup" id="error-popup-1">
+            <p class="text-error">Въведете правилно име</p>
+        </div>
+        <div class="error-popup" id="error-popup-2">
+            <p class="text-error">Въведете правилен имейл</p>
+        </div>
+        <div class="error-popup" id="error-popup-3">
+            <p class="text-error">Въведете правилен телефон</p>
+        </div>
+        <div class="error-popup" id="error-popup-4">
+            <p class="text-error">Въведете текст в полето</p>
+        </div>
+        <div class="popup" id="popup-1">
+
+            <div class="content">
+                <div class="button-pop">
+                    <button class="close-btn" onclick="togglePopUp()">
+                        <img src="Resourses/back.389d8e18.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="name-popup">
+                    <p class="name-p">Контакти</p>
+                </div>
+
+                <div class="description-grid">
+                    <div class="vertical-line-pop"></div>
+                    <div class="description-pop">
+                        Ако имате въпроси относно парцела, или имате нужда от друга информация, не се колебайте да ни пишете и ние ще се свържем с вас
+                    </div>
+                </div>
+
+                <form class="form-grid-pop">
+                    
+                    <input type="hidden" name="_captcha" value="false">
+                    <input class="name-form" id="name" type="text" placeholder="Вашето име">
+                    
+                    <input class="email-form" id="email" type="email" placeholder="e-mail" required>
+                    
+                    <input class="gsm-form" id="gsm" type="text" placeholder="Телефон">
+                    
+                    <input class="text-form" id="text" type="text" placeholder="Запитване">
+            
+                </form>
+
+                <div>
+                <button class="btn-send" id="submit" type="submit" onclick="sendEmail()">Изпрати</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="c-project-start">
+            <div class="strong-text">
+                <strong >Текущ проект</strong>
+            </div>
+            <div class="grid-line">
+                <div class="vertical-line">
+
+                </div>
+                <div class="text">
+                    Урегулиран парцел до язовир Искър, вилна зона "Мечката"
+                </div>
+            </div>
+        </div>
+
+        <div class="description-current">
+
+            <div id="div1-map">
+                <img class="map-hover" src="Resourses/map.017983aa.svg" alt="logo" 
+                onmouseover="changeImage(1,this)" onmouseout="changeImage(2,this)">
+            </div>
+
+            <div class="div2-description">
+                <div class="grid2-1">
+                    <div class="name">
+                        УРЕГУЛИРАН ПАРЦЕЛ                       
+                    </div>
+                    <div class="name">
+                        НА 1 ЧАС ПЪТ ОТ СОФИЯ
+                    </div>
+                    <div class="name">
+                        НА 15 МИН. ОТ БОРОВЕЦ
+                    </div>
+                    <div class="name">
+                        НА 10 МИН. ОТ САМОКОВ
+                    </div>
+                    <div class="name">
+                        НА 5 МИН ОТ ЯЗ. ИСКЪР
+                    </div>
+                </div>
+                <div class="grid2-2">
+                    <section>
+                        <h1>ПАРАМЕТИР НА ЗАСТРОЯВАНЕ</h1>
+                        <p>• Плътност – 40%</p>
+                        <p>• КИНТ – 0.8</p>
+                        <p>• Озеленяване – 50%</p>
+                        <p>• Височина – 7м</p>
+                        <p>• Етажност – 2</p>
+                    </section>
+
+                    <section>
+                        <h1>ХАРАКТЕРИСТИКИ НА ИМОТА</h1>
+                        <p>• Тип на имота: Парцели в регулация, Земи, Парцели за инвестиция</p>
+                        <p>• Обща площ: 3131.00 м2 (чиста площ плюс общи части)</p>
+                    </section>
+
+                    <section>
+                        <h1>ОПИСАНИЕ НА ИМОТА</h1>
+                        <p>
+                            Предлагаме на вашето внимание урегулиран поземлен имот с изработен ПУП и лице на улица. Равен и слънчев парцел, разположен сред вили и къщи с постоянно обитаване във в.з. Мечката, местност „Татарски брод“, на 10 км от Самоков и на 20 км от ски-курорта Боровец.
+                        </p>
+                        <p>До имота има ток, възможно е да свързване с канализация и водоснабдяване.</p>
+                        <p>До имота има ток, възможно е да свързване с канализация и водоснабдяване.</p>
+                        <p>Парцелът е разположен в рекреационна устройствена зона на вилен отдих – Ов, респективно, имотът е подходящ за изграждането на вилна сграда, която може да служи за лично ползване, отдаване под наем или за развитието на малък семеен бизнес.</p>
+                        <p>Регионът благоприятства еко туризъм, лов и риболов, спорт на открито, организирани преходи и пикници и др.</p>
+                    </section>
+                    <div class="div-link">
+                        <a href="https://www.google.bg/maps/place/Samokov+Municipality/@42.3087678,23.3402926,54206m/data=!3m2!1e3!4b1!4m5!3m4!1s0x14ab24023250a8c3:0xf08283e559daaf14!8m2!3d42.3369802!4d23.5528006?hl=en&shorturl=1" target="_blank">
+                            ПРЕГЛЕД В GOOGLE MAPS
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <script src="map.js"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("JnT9kLkUy4Ovhr028");
+       })();
+    </script>
+    </div>
+
+</body>
+</html>

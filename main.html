@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>cDev</title>
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+    <nav>
+        <a style="text-decoration: none;" href="#">
+            <span class="main-page">
+                НАЧАЛО
+            </span></a>
+        <a style="text-decoration: none;" href="current-project.html">
+            <span class="current-project">
+                ТЕКУЩ ПРОЕКТ
+            </span></a>
+        <a style="text-decoration: none;" href="#">
+            <span class="image-span">
+                <img class= "image-cdev" src="Resourses/logo_CDEV1.svg" alt="img1">
+            </span></a>
+        <a style="text-decoration: none;" href="map.html">
+            <span class="map">
+                ПЪТНА КАРТА
+            </span></a>
+        <a style="text-decoration: none;" href="#" onclick="togglePopUp()">
+            <span class="contacts">
+                КОНТАКТИ
+            </span></a>
+
+    </nav>
+</head>
+<body>
+    
+    <div>
+        
+        <div>
+
+            <div id="house-img">
+                <img src="Resourses/house.png" alt="">
+            </div>
+            <div id="right-top">
+                <img src="Resourses/right-up.svg" alt="">
+            </div>
+        </div>
+
+        <div class="error-popup" id="error-popup-1" >
+            <p class="text-error">Въведете правилно име</p>
+        </div>
+        <div class="error-popup" id="error-popup-2">
+            <p class="text-error">Въведете правилен имейл</p>
+        </div>
+        <div class="error-popup" id="error-popup-3">
+            <p class="text-error">Въведете правилен телефон</p>
+        </div>
+        <div class="error-popup" id="error-popup-4">
+            <p class="text-error">Въведете текст в полето</p>
+        </div>
+        <div class="popup" id="popup-1">
+
+            <div class="content">
+                <div class="button-pop">
+                    <button class="close-btn" onclick="togglePopUp()">
+                        <img src="Resourses/back.389d8e18.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="name-popup">
+                    <p class="name-p">Контакти</p>
+                </div>
+
+                <div class="description-grid">
+                    <div class="vertical-line-pop"></div>
+                    <div class="description-pop">
+                        Ако имате въпроси относно парцела, или имате нужда от друга информация, не се колебайте да ни пишете и ние ще се свържем с вас
+                    </div>
+                </div>
+
+                <form class="form-grid-pop">
+                    
+                    <input type="hidden" name="_captcha" value="false">
+                    <input class="name-form" id="name" type="text" placeholder="Вашето име">
+                    
+                    <input class="email-form" id="email" type="email" placeholder="e-mail" required>
+                    
+                    <input class="gsm-form" id="gsm" type="text" placeholder="Телефон">
+                    
+                    <input class="text-form" id="text" type="text" placeholder="Запитване">
+            
+                </form>
+                <div>
+                    <button class="btn-send" id="submit" type="submit" onclick="sendEmail()">
+                        Изпрати
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="first-div">
+            <div class="cdev-trans">
+                <img  src="Resourses/cDev-transperant.svg" alt="">
+            </div>
+            <div class="first-text">
+                <strong >
+                    Строително-инвестиционно дружество
+                </strong>
+            </div>
+            <div class="first-text-desc">
+                <span>
+                    Ние се занимаваме с проучване, комплексно проектиране и строителство на административни и жилищни сгради.
+                </span>
+            </div>
+
+            <div class="line">
+
+            </div>
+            <div class="container">
+                <div class="grid-main">
+                    <a style="text-decoration: none;" href="current-project.html">
+                        <div class="description-main">
+                            <strong class="description-main-bold">
+                                Текущ проект
+
+                            </strong>
+                            <div class="vertical-line">
+
+                            </div>
+                            <p class="description-main-p">
+                                Урегулиран парцел до язовир Искър, вилна зона "Мечката"
+                            </p>
+                        </div>
+                        <div>
+                            <img class="project-img1" src="Resourses/project.c1afe337.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-main">
+                    <a style="text-decoration: none;" href="current-project.html">
+                        <div class="description-main">
+                            <strong class="description-main-bold">
+                                Пътна Карта
+                            </strong>
+                            <div class="vertical-line">
+
+                            </div>
+                            <p class="description-main-p">
+                                Пътна карта с изпълнените и предстоящи етапи по проекта
+                            </p>
+                        </div>
+                        <div>
+                            <img class="project-img2" src="Resourses/path.612f494a.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-main" onclick="togglePopUp()">
+                    <div class="description-main-cont">
+                        <strong class="description-main-bold">
+                            Контакти
+                        </strong>
+                            <div class="vertical-line">
+                        </div>
+                        <p class="description-main-p">
+                            Свържете се с нас за повече информация
+                        </p>
+                    </div>
+                    <div>
+                        <img class="contact-img" src="Resourses/contacts-div.svg" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="left-down">
+            <img src="Resourses/left-down.svg" alt="">
+        </div>
+
+    </div>
+
+    <script src="map.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("JnT9kLkUy4Ovhr028");
+       })();
+    </script>
+</body>
+</html>
